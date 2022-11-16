@@ -1,0 +1,220 @@
+html,
+body {
+  margin: 0px;
+}
+
+p {
+  width: 62%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: cadetblue;
+  color: white;
+}
+
+p,
+h1,
+h2,
+.personalwebsite,
+.figmaprototype {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.personalwebsite,
+.figmaprototype {
+  font-size: 120%;
+}
+
+.personalwebsite,
+.figmaprototype,
+h1,
+h2 {
+  color: cadetblue;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 3em, 1fr, 3em;
+  gap: 1em;
+  min-height: 100vh;
+  background-color: gainsboro;
+}
+
+.item1 {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 1 / 4;
+  grid-row: 2 / 13;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(20221115_104538.jpg);
+  background-size: 30em;
+}
+
+.item3 {
+  grid-column: 1 / 4;
+  grid-row: 13;
+}
+
+.item4 {
+  grid-column: 1 / 4;
+  grid-row: 14;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.item5 {
+  grid-column: 1 / 4;
+  grid-row: 15;
+}
+
+.item6 {
+  grid-column: 1 / 4;
+  grid-row: 16;
+  margin-bottom: 1%;
+}
+
+.item1,
+.item3,
+.item4,
+.item5,
+.item6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*for mobile or smaller than laptop*/
+
+@media screen and (max-width: 479px) {
+  .personalwebsite,
+  .figmaprototype {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .item4,
+  .item5,
+  .item6 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .image2,
+  .image4 {
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .figmaprototype {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .paragraph1,
+  .paragraph2 {
+    display: flex;
+    align-self: center;
+    min-height: 30%;
+    min-width: 200px;
+    max-width: 62%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  p {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+
+/*for laptop*/
+
+@media screen and (min-width: 1100px) {
+  .paragraph2 {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .paragraph1,
+  .paragraph2 {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .image2,
+  .image4 {
+    padding-right: 25%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .image1,
+  .image3 {
+    padding-left: 25%;
+  }
+}
+
+/*bigger than laptop*/
+
+@media screen and (min-width: 1700px) {
+  .paragraph1,
+  .paragraph2 {
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .image1,
+  .image3 {
+    margin-left: 9%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .image2,
+  .image4 {
+    margin-right: 9%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .personalwebsite {
+    margin-left: 18%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .figmaprototype {
+    margin-right: 18%;
+  }
+}
